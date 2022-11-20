@@ -8,6 +8,50 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-<p>hola mudno</p>    
+    <div class="mainWrap">
+        <button class="btnBack"></button>
+        <h1 class="title">Métodos de pago</h1>  
+
+        <form class="form-wrap">
+            <label for="">Nombre en la tarjeta</label>
+            <div class="form-wrapInput">
+                <input type="text" placeholder="Nombre como aparece en l tarjeta">
+            </div>
+            <label>Número de la tarjeta</label>
+            <div class="form-wrapInput">
+                <input type="text" placeholder="Ingrese el número de la tarjeta">
+            </div>
+
+            <div class="from-wrapCols">
+                <div class="form-col">
+                    <label for="">Fecha de expiración</label>
+                    <input type="text" placeholder="MM/AA"></div>
+                <div class="form-col">
+                    <label for="">CVC/CW</label>
+                    <div class="form-wrapInput">
+                        <input type="text" placeholder="3 digitos"></div>
+                    </div>
+            </div>
+
+            <label for="">Documento de identidad</label>
+
+            <div class="from-wrapId">
+                <select name="" id="">
+                    <option value="">CC</option>
+                    <option value="">Pasaporte</option>
+                </select>
+
+                <input type="text" placeholder="Documento de identidad">
+            </div>
+
+            <input type="checkbox">
+
+            <label>Configurar esta tarjeta como principal para mis proximos pagos</label>
+
+            <button class="form-mainBtn">Agregar tarjeta</button>
+
+        </form>
+
+    </div>
 </body>
 </html>
