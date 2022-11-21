@@ -1,3 +1,121 @@
-p {
-  color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700;900&display=swap");
+html, body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #FAFAFA;
+  margin: 0;
+  padding: 0;
+}
+
+.btnBack {
+  width: 30px;
+  height: 30px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PHBvbHlsaW5lIHBvaW50cz0iMzI4IDExMiAxODQgMjU2IDMyOCA0MDAiIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS13aWR0aDo0OHB4Ii8+PC9zdmc+") center no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.title {
+  margin: 7px 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.credit-card {
+  max-width: 100%;
+  width: 60%;
+  margin: 21px auto;
+  display: block;
+}
+
+.mainWrap {
+  width: 90%;
+  margin: 14px auto 38px;
+}
+
+.form-mainBtn {
+  background: #7335bc;
+  color: #fff;
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 7px;
+  margin: 14px 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+.form-wrap label {
+  margin: 0 0 14px 0;
+  font-weight: 400;
+  display: block;
+}
+.form-wrap input[type=text] {
+  height: 38px;
+  width: 96%;
+  margin: 0 0 28px 0;
+  padding: 0 7px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid #E9E9E9;
+  border-radius: 7px;
+}
+.form-wrap input[type=text]::-moz-placeholder {
+  color: #BDBDBD;
+}
+.form-wrap input[type=text]:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+.form-wrap input[type=text]::placeholder {
+  color: #BDBDBD;
+}
+.form-wrap input[type=text]:focus-visible {
+  border: 1px solid #7335bc;
+}
+.form-wrap select {
+  height: 38px;
+  width: 100px;
+  margin: 0 0 28px 0;
+  padding: 0 7px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid #E9E9E9;
+  border-radius: 7px;
+  color: #BDBDBD;
+}
+.form-wrapCols {
+  display: flex;
+}
+.form-wrapCheckbox {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 38px 0;
+}
+.form-wrapCheckbox label {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 0 0 7px;
+  font-weight: 100;
+}
+.form-wrapId {
+  display: flex;
+  gap: 8%;
+}
+.form-wrapCols {
+  display: flex;
+  gap: 10%;
+}
+.form-col {
+  width: 50%;
+}
+.form-col input {
+  width: 90% !important;
+}
+.form-wrapInput--number, .form-wrapInput--cvc {
+  position: relative;
+  height: 42px;
+  margin: 0 0 28px 0;
+}
+.form-wrapInput--number img, .form-wrapInput--cvc img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */

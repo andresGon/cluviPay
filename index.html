@@ -12,30 +12,35 @@
         <button class="btnBack"></button>
         <h1 class="title">Métodos de pago</h1>  
 
+        <img class="credit-card" src="./images/tarjeta-de-credito.jpg" alt="">
+
         <form class="form-wrap">
             <label for="">Nombre en la tarjeta</label>
             <div class="form-wrapInput">
-                <input type="text" placeholder="Nombre como aparece en l tarjeta">
+                <input type="text" placeholder="Nombre como aparece en la tarjeta">
             </div>
             <label>Número de la tarjeta</label>
-            <div class="form-wrapInput">
+            <div class="form-wrapInput form-wrapInput--number">
                 <input type="text" placeholder="Ingrese el número de la tarjeta">
+                <img src="./images/numero.jpg" alt="Número de tarjeta">
             </div>
 
-            <div class="from-wrapCols">
+            <div class="form-wrapCols">
                 <div class="form-col">
                     <label for="">Fecha de expiración</label>
                     <input type="text" placeholder="MM/AA"></div>
                 <div class="form-col">
-                    <label for="">CVC/CW</label>
-                    <div class="form-wrapInput">
-                        <input type="text" placeholder="3 digitos"></div>
+                    <label for="">CVC/CW</label> 
+                    <div class="form-wrapInput form-wrapInput--cvc">
+                        <input type="text" placeholder="3 digitos">
+                        <img src="./images/cvc.jpg" alt="cvc">
                     </div>
+                </div>
             </div>
 
             <label for="">Documento de identidad</label>
 
-            <div class="from-wrapId">
+            <div class="form-wrapId">
                 <select name="" id="">
                     <option value="">CC</option>
                     <option value="">Pasaporte</option>
@@ -44,9 +49,12 @@
                 <input type="text" placeholder="Documento de identidad">
             </div>
 
-            <input type="checkbox">
+            <div class="form-wrapCheckbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Configurar esta tarjeta como principal para mis proximos pagos</label>
+            </div>
 
-            <label>Configurar esta tarjeta como principal para mis proximos pagos</label>
+
 
             <button class="form-mainBtn">Agregar tarjeta</button>
 
