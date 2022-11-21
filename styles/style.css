@@ -50,6 +50,8 @@ html, body {
   margin: 0 0 14px 0;
   font-weight: 400;
   display: block;
+}
+.form-wrap label.fix {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -57,7 +59,7 @@ html, body {
 }
 .form-wrap input[type=text] {
   height: 38px;
-  width: 94%;
+  width: calc(100% - 16px);
   margin: 0 0 28px 0;
   padding: 0 7px;
   font-family: "Lexend Deca", sans-serif;
@@ -110,21 +112,11 @@ html, body {
 .form-col {
   width: 50%;
 }
-.form-col input {
-  width: 90% !important;
+.form-wrapInput--number input {
+  background: url(../images/numero.jpg) #fff calc(100% - 10px) no-repeat;
+  background-size: 36px;
 }
-.form-wrapInput--number, .form-wrapInput--cvc {
-  position: relative;
-  height: 42px;
-  margin: 0 0 28px 0;
-}
-.form-wrapInput--number img, .form-wrapInput--cvc img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  width: 40px;
-}
-.form-wrapInput--cvc {
-  width: 94%;
+.form-wrapInput--cvc input {
+  background: url(../images/cvc.jpg) #fff calc(100% - 10px) no-repeat;
+  background-size: 36px;
 }/*# sourceMappingURL=style.css.map */

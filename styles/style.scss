@@ -53,14 +53,17 @@ $mainColor: #7335bc;
              margin: 0 0 14px 0;
             font-weight: 400;
             display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
+            
+            &.fix{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+            }
         }
         input[type="text"]{
             height: 38px;
-            width: 94%;
+            width: calc(100% - 16px);
             margin: 0 0 28px 0;
             padding: 0 7px;
             font-family: 'Lexend Deca', sans-serif;
@@ -107,25 +110,19 @@ $mainColor: #7335bc;
     }
     &-col{
         width: 50%;
-        input{
-            width: 90% !important;
-        }
     }
     &-wrapInput{
-        &--number, &--cvc{
-            position: relative;
-            height: 42px;
-            margin: 0 0 28px 0;
-            img{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 10px;
-                width: 40px;
+        &--number{
+            input{
+                background: url(../images/numero.jpg) #fff calc(100% - 10px) no-repeat;
+                background-size: 36px;
             }
         }
         &--cvc{
-            width: 94%;
+            input{
+                background: url(../images/cvc.jpg) #fff calc(100% - 10px) no-repeat;
+                background-size: 36px;
+            }
         }
     }
 }
