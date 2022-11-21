@@ -31,6 +31,8 @@ $mainColor: #7335bc;
 .mainWrap{
     width: 90%;
     margin: 14px auto 38px;
+    max-width: 768px;
+    max-height: 1024px;
 }
 
 .form{
@@ -51,10 +53,14 @@ $mainColor: #7335bc;
              margin: 0 0 14px 0;
             font-weight: 400;
             display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
         }
         input[type="text"]{
             height: 38px;
-            width: 96%;
+            width: 94%;
             margin: 0 0 28px 0;
             padding: 0 7px;
             font-family: 'Lexend Deca', sans-serif;
@@ -117,6 +123,9 @@ $mainColor: #7335bc;
                 right: 10px;
                 width: 40px;
             }
+        }
+        &--cvc{
+            width: 94%;
         }
     }
 }
